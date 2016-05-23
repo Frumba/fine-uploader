@@ -172,8 +172,8 @@ qq.traditional.XhrUploadHandler = function(spec, proxy) {
                 fileOrBlob = handler.getFile(id);
 
             xhr.setRequestHeader("Accept", "application/json");
-            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-            xhr.setRequestHeader("Cache-Control", "no-cache");
+            // xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            // xhr.setRequestHeader("Cache-Control", "no-cache");
 
             if (!multipart) {
                 xhr.setRequestHeader("Content-Type", "application/octet-stream");
